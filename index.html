@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/5387491098.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="container">
+      <header id="encabezado">
+        <h1 class="logo">
+          <a href="index.html" class="fuente-acento">Mi web</a>
+        </h1>
+        <label class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="navbar">
+          <ul class="menu">
+            <li><a class="navli" href="index.html">Inicio</a></li>
+            <li><a class="navli" href="#seccion-principal">Acerca de mí</a></li>
+            <li><a class="navli" href="#trabajos">Trabajos</a></li>
+            <li><a class="navli" href="#trabajos">Servicios</a></li>
+            <li><a class="navli" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="seccion-principal">
+        <section class="seccion-1">
+          <div class="acerda-de">
+            <div class="perfil-imagen">
+              <img
+                src="img/perfil.jpg"
+                alt="imagen perfil"
+                class="perfil-imagen"
+              />
+            </div>
+            <div class="texto-acercade">
+              <h2>Acerca de mi</h2>
+              <p>Bienvenido a mi web</p>
+              <p class="parrafo2"></p>
+            </div>
+          </div>
+        </section>
+        <section class="seccion-2">
+          <img src="img/cr1.png" alt="Carrusel" class="cr1-imagen" />
+        </section>
+        <section class="trabajos">
+          <!-- Sección Trabajos -->
+          <h2>Trabajos</h2>
+          <!-- Contenido de la sección Trabajos -->
+        </section>
+        <section class="servicios">
+          <!-- Sección Servicios -->
+          <h2>Servicios</h2>
+          <!-- Contenido de la sección Servicios -->
+        </section>
+        <section class="contacto">
+          <!-- Sección Contacto -->
+          <h2>Contacto</h2>
+          <form action="" method="get" class="formulario" id="form">
+            <div class="form-row">
+              <label class="label" for="nombre">Nombre</label>
+              <input
+                class="input"
+                type="text"
+                id="nombre"
+                name="nombre"
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <div class="form-row">
+              <label class="label" for="email">Email</label>
+              <input
+                class="input"
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <div class="form-row">
+              <label class="label" for="mensaje">Mensaje</label>
+              <textarea
+                class="input"
+                id="mensaje"
+                name=" mensaje"
+                autocomplete="off"
+              ></textarea>
+            </div>
+            <div class="form-row">
+              <button class="button">Enviar</button>
+            </div>
+            <p class="alertas" id="alertas"></p>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <span>Michel Quiroga</span>
+          <img src="img/colombia.png" alt="Bandera-Colombia" />
+          <p>Nacionalidad: Bogotá</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
